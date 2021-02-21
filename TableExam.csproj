@@ -1,0 +1,200 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C47CD464-C2D8-49BB-856A-A6B9646F853D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TableExam</RootNamespace>
+    <AssemblyName>TableExam</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44328</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controls\slick.columnpicker.css" />
+    <Content Include="controls\slick.columnpicker.js" />
+    <Content Include="controls\slick.pager.css" />
+    <Content Include="controls\slick.pager.js" />
+    <Content Include="css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\smoothness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="example6-ajax-loading.html" />
+    <Content Include="examples.css" />
+    <Content Include="images\actions.gif" />
+    <Content Include="images\ajax-loader-small.gif" />
+    <Content Include="images\arrow_redo.png" />
+    <Content Include="images\arrow_right_peppermint.png" />
+    <Content Include="images\arrow_right_spearmint.png" />
+    <Content Include="images\arrow_undo.png" />
+    <Content Include="images\bullet_blue.png" />
+    <Content Include="images\bullet_star.png" />
+    <Content Include="images\bullet_toggle_minus.png" />
+    <Content Include="images\bullet_toggle_plus.png" />
+    <Content Include="images\calendar.gif" />
+    <Content Include="images\collapse.gif" />
+    <Content Include="images\comment_yellow.gif" />
+    <Content Include="images\down.gif" />
+    <Content Include="images\drag-handle.png" />
+    <Content Include="images\editor-helper-bg.gif" />
+    <Content Include="images\expand.gif" />
+    <Content Include="images\header-bg.gif" />
+    <Content Include="images\header-columns-bg.gif" />
+    <Content Include="images\header-columns-over-bg.gif" />
+    <Content Include="images\help.png" />
+    <Content Include="images\info.gif" />
+    <Content Include="images\listview.gif" />
+    <Content Include="images\pencil.gif" />
+    <Content Include="images\row-over-bg.gif" />
+    <Content Include="images\sort-asc.gif" />
+    <Content Include="images\sort-asc.png" />
+    <Content Include="images\sort-desc.gif" />
+    <Content Include="images\sort-desc.png" />
+    <Content Include="images\stripes.png" />
+    <Content Include="images\tag_red.png" />
+    <Content Include="images\tick.png" />
+    <Content Include="images\user_identity.gif" />
+    <Content Include="images\user_identity_plus.gif" />
+    <Content Include="lib\firebugx.js" />
+    <Content Include="lib\jquery-1.7.min.js" />
+    <Content Include="lib\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="lib\jquery.event.drag-2.2.js" />
+    <Content Include="lib\jquery.event.drop-2.2.js" />
+    <Content Include="lib\jquery.jsonp-2.4.min.js" />
+    <Content Include="lib\jquery.simulate.js" />
+    <Content Include="lib\jquery.sparkline.min.js" />
+    <Content Include="lib\qunit.css" />
+    <Content Include="lib\qunit.js" />
+    <Content Include="slick\slick-default-theme.css" />
+    <Content Include="slick\slick.core.js" />
+    <Content Include="slick\slick.dataview.js" />
+    <Content Include="slick\slick.editors.js" />
+    <Content Include="slick\slick.formatters.js" />
+    <Content Include="slick\slick.grid.css" />
+    <Content Include="slick\slick.grid.js" />
+    <Content Include="slick\slick.groupitemmetadataprovider.js" />
+    <Content Include="slick\slick.remotemodel.js" />
+    <Content Include="table.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebTable.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51055</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44328/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

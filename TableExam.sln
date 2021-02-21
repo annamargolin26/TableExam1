@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableExam", "TableExam.csproj", "{C47CD464-C2D8-49BB-856A-A6B9646F853D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C47CD464-C2D8-49BB-856A-A6B9646F853D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C47CD464-C2D8-49BB-856A-A6B9646F853D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C47CD464-C2D8-49BB-856A-A6B9646F853D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C47CD464-C2D8-49BB-856A-A6B9646F853D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30140849-961A-4814-9F64-89A3F9CF8D3B}
+	EndGlobalSection
+EndGlobal
